@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Operation</title>
+    <link rel="stylesheet" href="./Crud.css">
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-child magenta">
+            <table class="table">
+                <tr class="table-row">
+                    <td>
+                        <form onsubmit="event.preventDefault(); onFormSubmit();">
+                            <div class="container">
+                                <h1 id="heading1">Register</h1>
+                                <p id="p1">Please fill this form to create a Record.</p>
+                                <hr>
+                                <label id="label" for="ID"><b>ID</b></label>
+                                <input type="text" placeholder="Enter ID" name="ID" id="Id" required>
+
+                                <label id="label" for="FirstName"><b>First Name</b></label>
+                                <input type="text" placeholder="Enter First Name" name="FirstName" id="FirstName" required>
+
+                                <label id="label" for="LastName"><b>Last Name</b></label>
+                                <input type="text" placeholder="Enter Last Name" name="LastName" id="LastName" required>
+
+                                <label id="label" for="Email"><b>Email</b></label>
+                                <input type="text" placeholder="Enter Email" name="Email" id="Email" required>
+
+                                <label id="label" for="Department"><b>Department</b></label>
+                                <input type="text" name="Department" id="Department" placeholder="Enter Department" required>
+                                <hr>
+
+                                <!-- <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> -->
+                                <button type="submit" name="submit" class="registerbtn">Submit</button>
+                            </div>
+                        </form>
+                    </td>
+
+                </tr>
+
+            </table>
+        </div>
+        <div class="flex-child green">
+            <td>
+                <table id="empList">
+                    <h1 id="record">Record</h1>
+                    <thead id="tab_head">
+                        <tr>
+                            <th>Id</th>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Edit</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="tab_body">
+
+                    </tbody>
+
+                </table>
+            </td>
+        </div>
+    </div>
+    <script src="./Crud.js"></script>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------ -->
